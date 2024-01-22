@@ -1,0 +1,42 @@
+
+@media (max-width: 375px){
+    .banners-promocionais-estaticos{
+        .banners-promocionais-estaticos-12x,
+        .banners-promocionais-estaticos-todo-br{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+   
+        
+    
+
+}
+
+@media (max-width: 767px){
+    header{
+        form{
+            margin: 20px 0;
+        }
+    }
+    #carouselExampleControls{
+        display: none;
+    }
+    .produtos-container img{
+        width: 100%;
+    }
+    .produtos-compra{
+        img{width: 100%;}
+    }
+}
+
+@media (max-width: 991px){
+    header{
+        ul{
+            li{
+                margin: 7px 0;
+            }
+        }
+    }
+}

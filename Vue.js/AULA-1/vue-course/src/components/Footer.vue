@@ -10,5 +10,6 @@ export default {
 <style>
 footer{
   background-color: blue;
+  color: white;
 }
 </style>
