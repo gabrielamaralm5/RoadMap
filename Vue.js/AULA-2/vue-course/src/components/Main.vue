@@ -2,23 +2,15 @@
   <main>
     <section>
       <div>
-        <label for="text">Texto</label>
-        <input type="text" v-model="text"/>
+        <input type="text" />
         <button type="submit">click</button>
       </div>
-      {{ text }}
     </section>
   </main>
 </template>
 
 <script>
-export default {
-  data(){
-    return{
-      text:'oloko',
-    }
-  }
-}
+export default {}
 </script>
 
 <style>

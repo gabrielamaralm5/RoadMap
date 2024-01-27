@@ -2,11 +2,10 @@
   <main>
     <section>
       <div>
-        <label for="text">Texto</label>
         <input type="text" v-model="text"/>
         <button type="submit">click</button>
+        {{ text }}
       </div>
-      {{ text }}
     </section>
   </main>
 </template>
@@ -15,7 +14,7 @@
 export default {
   data(){
     return{
-      text:'oloko',
+      text:""
     }
   }
 }
