@@ -2,15 +2,24 @@
   <main>
     <section>
       <div>
-        <input type="text" />
+        <input type="text" 
+        v-model="text"
+        placeholder="pesquise aqui...">
         <button type="submit">click</button>
+        {{ text }}
       </div>
     </section>
   </main>
 </template>
 
 <script>
-export default {}
+export default {
+  data(){
+    return{
+      text:''
+    }
+  }
+}
 </script>
 
 <style>
