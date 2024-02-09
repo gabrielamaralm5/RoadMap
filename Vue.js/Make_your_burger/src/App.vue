@@ -24,12 +24,18 @@ export default {
 
 <style>
 .main-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: aliceblue;
   display: flex;
-  justify-content: center;
   color: black;
+  flex-direction: column;
   
+}
+
+.main-container h1{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 </style>

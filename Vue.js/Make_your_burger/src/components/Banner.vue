@@ -13,7 +13,7 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 70%;
+  height: 70vh;
   background: url(../../public/img/burger.jpg);
   background-size: cover;
   background-position: center center;

@@ -13,7 +13,7 @@ export default {
     background-color:black;
     color: orange;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     font-variant: small-caps;
     display: grid;
     place-items: center;
