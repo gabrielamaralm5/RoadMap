@@ -1,7 +1,7 @@
 <template>
   <Navbar :logo="logo_src" :alt="alt_src" />
   <RouterView />
-  <Footer />
+  
 </template>
 
 <script>
@@ -11,7 +11,7 @@ import Footer from './components/Footer.vue'
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
   },
   data() {
     return {

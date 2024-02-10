@@ -17,61 +17,80 @@
         <label for="pao">Escolha um pão:</label>
         <select name="pao" id="pao" class="down-element button-custo" >
           <option value="pao">Selecione Seu Pão</option>
-          <option value="pao">Integral</option>
+          <option v-for="pao in paes" :value="pao.tipo" :key="pao.id">{{ pao.tipo }}</option>
         </select>
       </div>
 
       <div>
-        <label for="meat">Escolha Carne Do Seu Burge:</label>
-        <select name="meat" id="meat" class="down-element button-custo">
+        <label for="meat" >Escolha Carne Do Seu Burge:</label>
+        <select name="meat" id="meat" class="down-element button-custo" >
           <option value="meat">Selecione sua Carne</option>
-          <option value="meat">maminha</option>
+          <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo" required>
+            {{ carne.tipo }}
+          </option>
         </select>
       </div>
 
-      <div class="option-checkbox">
+      <div class="option-checkbox" >
         <label for="checkbox">Selecione os opicionais:</label>
-        <div id="checkbox-div" class="checkbox-uni">
-          <input type="checkbox" name="checkbox" />
-          <span id="checkbox">salame</span>
+        <div id="checkbox-div" class="checkbox-uni" v-for="opicional in opicionais" :key="opicional.id">
+          <input type="checkbox" name="checkbox"/>
+          <span id="checkbox"> {{opicional.tipo}} </span>
         </div>
 
-        <div id="checkbox-div" class="checkbox-uni">
-          <input type="checkbox" name="checkbox" />
-          <span id="checkbox">salame</span>
+        
+      </div><div id="submit">
+          <button type="submit" class="submit">enviar</button>
         </div>
-
-        <div id="checkbox-div" class="checkbox-uni">
-          <input type="checkbox" name="checkbox" />
-          <span id="checkbox">salame</span>
-        </div>
-        <div id="submit">
-      <button type="submit" class="submit">enviar</button>
     </div>
-      </div>
-      
-    </div>
-
-    
   </form>
 </template>
 <script>
 export default {
-  name: 'formBurge'
+  name: 'formBurge',
+  data() {
+    return {
+      paes: null,
+      carnes: null,
+      opicionais: null,
+      nome: null,
+      pao: null,
+      carne: null,
+      opicional: [],
+      satus: 'solicitado',
+      msg: null
+    }
+  },
+  methods: {
+    async GetIngredientes() {
+      const req = await fetch('http://localhost:3000/ingredientes')
+      const data = await req.json()
+
+      this.paes = data.paes
+      this.carnes = data.carnes
+      this.opicionais = data.opcionais
+      console.log('olA')
+    }
+  },
+  mounted() {
+    this.GetIngredientes()
+  }
 }
 </script>
-<style scoped>
+<style >
 form {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 50px;
   align-items: center;
-  margin-bottom: 30px;
+  padding: 12px;
+  margin: 12px;
 }
 
 #container-form {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -145,6 +164,6 @@ span {
   width: 100%;
   height: 100%;
   padding: 10px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 </style>

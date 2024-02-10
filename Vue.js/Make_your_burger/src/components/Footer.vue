@@ -10,10 +10,10 @@ export default {
 </script>
 <style>
   footer{
+    display: none;
     background-color:black;
     color: orange;
-    width: 100%;
-    height: 30vh;
+  
     font-variant: small-caps;
     display: grid;
     place-items: center;
