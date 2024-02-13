@@ -1,7 +1,21 @@
-from selenium import webdriver
+import pyautogui
+import os
+x=734
+y=767
 
-driver = webdriver.Chrome("caminho_para_o_seu_driver")
-driver.get("URL_da_pagina")
+pyautogui.moveTo(x,y)
+pyautogui.click()
+x=596 
+y=467
+pyautogui.moveTo(x,y)
+pyautogui.sleep(1)
+pyautogui.click()
+x=683
+y=66
+pyautogui.moveTo(x,y)
+pyautogui.click()
 
-botao = driver.find_element_by_id("id_do_botao")
-botao.click()
+pyautogui.typewrite("www.bing.com")
+pyautogui.press("enter")
+
+os.system("shutdown /s /t 1")
