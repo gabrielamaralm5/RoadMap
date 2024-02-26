@@ -1,0 +1,1 @@
+/home/gabriel/Documents/GitHub/RoadMap/Rust/\ Entendendo\ o\ sistema\ de\ Build\ do\ Rust/hello_cargo/target/debug/hello_cargo: /home/gabriel/Documents/GitHub/RoadMap/Rust/\ Entendendo\ o\ sistema\ de\ Build\ do\ Rust/hello_cargo/src/main.rs

@@ -1,0 +1,1 @@
+/home/gabriel/Documents/GitHub/RoadMap/Rust/Tipos\ de\ dados\ na\ linguagem\ de\ programação/index/target/debug/index: /home/gabriel/Documents/GitHub/RoadMap/Rust/Tipos\ de\ dados\ na\ linguagem\ de\ programação/index/src/main.rs

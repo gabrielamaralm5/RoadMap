@@ -1,0 +1,1 @@
+/home/gabriel/Documents/GitHub/RoadMap/Rust/Lendo\ dados\ da\ entrada\ padrão/read_number/target/debug/read_number: /home/gabriel/Documents/GitHub/RoadMap/Rust/Lendo\ dados\ da\ entrada\ padrão/read_number/src/main.rs
